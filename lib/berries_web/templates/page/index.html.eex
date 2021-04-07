@@ -1,41 +1,14 @@
-<section class="text-center border-b-2 border-gray-100 bg-gray-100 rounded-lg mb-8 p-12 text-lg">
-  <h1 class="text-4xl font-normal leading-tight tracking-tighter mb-4"><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p class="mb-4">Peace of mind from prototype to production</p>
-</section>
+<section class="border-gray-100 mt-20 rounded-lg text-5xl flex flex-col">
+  <h1 class="text-gray-700 font-normal leading-tight mb-4">Send something...</h1>
+  <span class="block text-purple-500 self-end">sweet.</span>
+  <span class="block text-blue-500 mt-5">simple.</span>
+  <span class="block text-red-400 self-end mt-5">exciting.</span>
+  <span class="block text-yellow-400 mt-5">deserving.</span>
 
-<section class="flex">
-  <article class="flex-1">
-    <h2 class="text-3xl font-medium tracking-tight mb-4">Resources</h2>
-    <ul class="w-full mb-5 list-inside list-disc space-y-2">
-      <li>
-        <a class="text-blue-500 hover:text-gray-500" href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a class="text-blue-500 hover:text-gray-500" href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a class="text-blue-500 hover:text-gray-500" href="https://github.com/phoenixframework/phoenix/blob/v1.5/CHANGELOG.md">v1.5 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="flex-1">
-    <h2 class="text-3xl font-medium tracking-tight mb-4">Help</h2>
-    <ul class="mb-5 list-inside list-disc space-y-2">
-      <li>
-        <a class="text-blue-500 hover:text-gray-500" href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a class="text-blue-500 hover:text-gray-500" href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a class="text-blue-500 hover:text-gray-500" href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-      <li>
-        <a class="text-blue-500 hover:text-gray-500" href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
-      </li>
-      <li>
-        <a href="https://discord.gg/elixir">Elixir on Discord</a>
-      </li>
-    </ul>
-  </article>
+  <div class="flex justify-center" role="container">
+    <div class="bg-gradient-to-r uppercase shadow-xl font-bold rounded-lg flex text-2xl cursor-pointer from-yellow-400 to-red-500 text-white p-4  font-normal leading-tight text-center mb-4 mt-32">
+      Send a berry
+    </div>
+  </div>
+
 </section>

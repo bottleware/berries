@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>berries.to</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= Routes.static_path(@conn, "/apple-touch-icon.png") %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= Routes.static_path(@conn, "/favicon-32x32.png") %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= Routes.static_path(@conn, "/favicon-16x16.png") %>">
+    <link rel="manifest" href="<%= Routes.static_path(@conn, "/site.webmanifest") %>">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
-  <body class="max-w-2xl m-auto">
-    <header class="w-full border-b-2 border-gray-100 mb-6">
+  <body class="max-w-2xl m-auto bg-gray-50">
+    <header class="w-full border-b-2 border-red-300 mb-6">
       <section class="flex content-center">
         <img class="flex h-20 w-20 p-4" src="<%= Routes.static_path(@conn, "/images/berries.png") %>" alt="Phoenix Framework Logo"/>
-        <h1 class="self-center text-4xl">berries.to/</h1>
+        <h1 class="self-center text-gray-700 text-4xl">berries.to/</h1>
       </section>
     </header>
-    <main role="main" class="max-w-7xl py-0 px-8 my-0 mx-auto w-full relative">
+    <main role="main" class="max-w-7xl py-0 px-6 my-0 mx-auto w-full relative">
       <%= if info = get_flash(@conn, :info) do %>
         <div class="rounded-md mb-4 bg-blue-100 p-4">
           <div class="flex">
