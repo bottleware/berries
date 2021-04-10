@@ -39,4 +39,16 @@ defmodule BerriesWeb.Router do
       live_dashboard "/dashboard", metrics: BerriesWeb.Telemetry
     end
   end
+
+  scope "/", BerriesWeb do
+    pipe_through :browser
+
+    get "/list", HoarderController, :index
+    get "/hew", HoarderController, :new
+    get "/:id", HoarderController, :show
+    put "/update/:id", HoarderController, :update
+    post "/create", HoarderController, :create
+    get "/edit/:id", HoarderController, :edit
+    delete "/:id", HoarderController, :delete
+  end
 end

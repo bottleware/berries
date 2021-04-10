@@ -6,8 +6,17 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        'tego': '"New Tegomin"'
+      },
+    }
   },
-  variants: {},
+  variants: {
+    extend: {
+      translate: ['active'],
+    }
+  },
+
   plugins: []
 }

@@ -1,0 +1,28 @@
+<h1>Listing Hoarder</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Berries</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for hoarder <- @hoarder do %>
+    <tr>
+      <td><%= hoarder.name %></td>
+      <td><%= hoarder.berries %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.hoarder_path(@conn, :show, hoarder) %></span>
+        <span><%= link "Edit", to: Routes.hoarder_path(@conn, :edit, hoarder) %></span>
+        <span><%= link "Delete", to: Routes.hoarder_path(@conn, :delete, hoarder), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Hoarder", to: Routes.hoarder_path(@conn, :new) %></span>

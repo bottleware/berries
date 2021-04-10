@@ -1,0 +1,18 @@
+<h1>Show Hoarder</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @hoarder.name %>
+  </li>
+
+  <li>
+    <strong>Berries:</strong>
+    <%= @hoarder.berries %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.hoarder_path(@conn, :edit, @hoarder) %></span> |
+<span><%= link "Back", to: Routes.hoarder_path(@conn, :index) %></span>

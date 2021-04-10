@@ -1,14 +1,14 @@
-<section class="border-gray-100 mt-20 rounded-lg text-5xl flex flex-col">
+<section class="font-tego border-gray-100 mt-20 rounded-lg text-5xl flex flex-col">
   <h1 class="text-gray-700 font-normal leading-tight mb-4">Send something...</h1>
-  <span class="block text-purple-500 self-end">sweet.</span>
-  <span class="block text-blue-500 mt-5">simple.</span>
-  <span class="block text-red-400 self-end mt-5">exciting.</span>
-  <span class="block text-yellow-400 mt-5">deserving.</span>
+  <span class="block text-purple-500 self-end font-bold">sweet.</span>
+  <span class="block text-blue-500 mt-5 font-bold">simple.</span>
+  <span class="block text-red-400 self-end mt-5 font-bold">exciting.</span>
+  <span class="block text-yellow-400 mt-5 font-bold">deserving.</span>
 
   <div class="flex justify-center" role="container">
-    <div class="bg-gradient-to-r uppercase shadow-xl font-bold rounded-lg flex text-2xl cursor-pointer from-yellow-400 to-red-500 text-white p-4  font-normal leading-tight text-center mb-4 mt-32">
+    <a href="#" class="transform active:translate-y-1 tracking-tighter hover:-translate-y-0.5  font-sans bg-gradient-to-r uppercase shadow-xl font-bold rounded-lg flex text-2xl cursor-pointer from-yellow-400 to-red-500 text-white p-4  font-normal leading-tight text-center mb-4 mt-32">
       Send a berry
-    </div>
+    </a>
   </div>
 
 </section>

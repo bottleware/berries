@@ -1,0 +1,5 @@
+<h1>Edit Hoarder</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.hoarder_path(@conn, :update, @hoarder)) %>
+
+<span><%= link "Back", to: Routes.hoarder_path(@conn, :index) %></span>
